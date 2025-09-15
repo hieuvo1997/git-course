@@ -1,0 +1,13 @@
+1. Giải thích các câu lệnh:
+- git init: khởi tạo một folder mới trên git
+- git add <file_name>: thêm file vào vùng staging
+- git add .: thêm tất cả các file vào vùng staging
+- git commit -m"maessage": commit thay đổi
+
+2. 
+a. Vùng working directory: file1, file2, file3
+b. chạy câu lệnh git init 3 file vẫn đang ở vùng working directoty
+c. Sau khi chạy lệnh git commit -m”init project”, 3 file vẫn ở vùng working directory vì chưa chạy câu lệnh git add
+d. file1 chuyển sang vùng staging, file2 và file3 vẫn ở vùng working directory
+e. file1 chuyển sang vùng repository, file2 và file3 cẫn ở vùng working directory
+f. Không có gì thay đổi, các file vẫn ở các vùng như câu e
