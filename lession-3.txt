@@ -1,0 +1,98 @@
+1. Giải thích các câu lệnh sau:
+
+- git commit --amend: Mở editor để sửa message -> cái này tự search trong bài học không thấy ạ!
+- git commit --amend -m"maessage": sửa massage của commit gần nhất
+- git restored --staged <file>: restore 1 file từ staging về working directory
+- git reset HEAD~1: reset 1 commit gần nhất
+
+2. 
+
+a. Tạo 3 file: file1, file2, file3
+- Local: file1, file2, file3
+- Working directory:
+- Staging:
+- Repository:
+
+b. Chạy lệnh: git init
+- Local: 
+- Working directory: file1, file2, file3
+- Staging: 
+- Repository:
+
+c. Chạy lệnh: git commit -m"init project"
+- Local: 
+- Working directory: file1, file2, file3
+- Staging:
+- Repository:
+
+d. Chạy lệnh: git add file1
+- Local: 
+- Working directory: file2, file3
+- Staging: file1
+- Repository:
+
+e. Chạy lệnh: git commit -m"add file"
+- Local: 
+- Working directory: file2, file3
+- Staging: 
+- Repository: file1
+
+f. Chạy lệnh: git add .
+- Local: 
+- Working directory:
+- Staging: file2, file3
+- Repository: file1
+
+g. Chạy lệnh: git restore --staged file2
+- Local: 
+- Working directory: file2
+- Staging: file3
+- Repository: file1
+
+h. Chạy lệnh: git commit -m"add all files"
+- Local: 
+- Working directory: file2
+- Staging: 
+- Repository: file1, file3
+
+i. Chạy lệnh: git reset HEAD~1
+- Local: 
+- Working directory: file2, file3
+- Staging: 
+- Repository: file1
+
+3.
+- Local: lesson-3-git
+- Working directory: 
+- Staging: 
+- Repository: 
+
+a. Chạy lệnh: git init
+- Local: 
+- Working directory: lesson-3-git
+- Staging: 
+- Repository: 
+
+b. tạo file file1.txt, file2.txt, oops/file3.txt
+- Local: 
+- Working directory: lesson-3-git, file1.txt, file2.txt, oops/file3.txt
+- Staging: 
+- Repository:
+
+c. Thêm file .gitignore, thêm vào 2 dòng: file1.txt, oops/
+- Local: 
+- Working directory: lesson-3-git, file1.txt, file2.txt, oops/file3.txt, .gitIgnore
+- Staging: 
+- Repository:
+
+d. Chạy lệnh: git add .
+- Local: 
+- Working directory: lesson-3-git, file1.txt, file2.txt, oops/file3.txt, .gitIgnore
+- Staging: lesson-3-git, file2.txt
+- Repository:
+
+e. Chạy lệnh: git commit -m"init project"
+- Local: 
+- Working directory: lesson-3-git, file1.txt, file2.txt, oops/file3.txt, .gitIgnore
+- Staging: lesson-3-git, file2.txt
+- Repository: lesson-3-git, file2.txt

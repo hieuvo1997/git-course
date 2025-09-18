@@ -1,0 +1,5 @@
+a.Câu lệnh để cài đặt email và
+name là gì?
+ git config --global user.name "name"
+ git config --global user.email "email"
+
